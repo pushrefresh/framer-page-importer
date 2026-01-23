@@ -1,0 +1,6 @@
+{
+  "id": "pgimpt",
+  "name": "Page Importer",
+  "modes": ["canvas", "configureManagedCollection"],
+  "icon": "/icon.svg"
+}

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemap xmlns="http://scope.pushrefresh.com/sitemap/1.0">
+  <project>
+    <name>CoolSys Website</name>
+    <client>CoolSys Inc.</client>
+    <date>2026-01-23</date>
+  </project>
+  <pages>
+    <page depth="0">
+      <name>Home</name>
+      <slug>/</slug>
+      <type>Static Page</type>
+      <complexity>Low</complexity>
+      <serviceType>Design Only</serviceType>
+      <description>Main landing page for CoolSys website</description>
+      <seoTitle>CoolSys | HVAC Solutions for Every Need</seoTitle>
+      <cost>$500</cost>
+      <order>1</order>
+      <children>
+        <page depth="1">
+          <name>Solutions</name>
+          <slug>solutions</slug>
+          <type>Static Page</type>
+          <complexity>Medium</complexity>
+          <serviceType>Design &amp; Dev</serviceType>
+          <description>Overview of our HVAC solutions</description>
+          <seoTitle>HVAC Solutions | CoolSys</seoTitle>
+          <cost>$2,000</cost>
+          <order>1</order>
+          <children>
+            <page depth="2">
+              <name>Commercial HVAC</name>
+              <slug>commercial-hvac</slug>
+              <type>Static Page</type>
+              <complexity>High</complexity>
+              <serviceType>Full Build</serviceType>
+              <description>Commercial heating and cooling systems</description>
+              <seoTitle>Commercial HVAC Systems | CoolSys</seoTitle>
+              <cost>$4,000</cost>
+              <order>1</order>
+            </page>
+            <page depth="2">
+              <name>Professional Solutions</name>
+              <slug>professional-solutions</slug>
+              <type>Static Page</type>
+              <complexity>High</complexity>
+              <serviceType>Full Build</serviceType>
+              <description>Enterprise-grade HVAC solutions</description>
+              <seoTitle>Professional HVAC Solutions | CoolSys</seoTitle>
+              <cost>$3,500</cost>
+              <order>2</order>
+            </page>
+            <page depth="2">
+              <name>Residential Services</name>
+              <slug>residential-services</slug>
+              <type>Static Page</type>
+              <complexity>Medium</complexity>
+              <serviceType>Design &amp; Dev</serviceType>
+              <description>Home heating and cooling</description>
+              <seoTitle>Residential HVAC | CoolSys</seoTitle>
+              <cost>$2,500</cost>
+              <order>3</order>
+            </page>
+          </children>
+        </page>
+        <page depth="1">
+          <name>Markets</name>
+          <slug>markets</slug>
+          <type>Static Page</type>
+          <complexity>Medium</complexity>
+          <serviceType>Design &amp; Dev</serviceType>
+          <description>Industries we serve</description>
+          <seoTitle>Markets We Serve | CoolSys</seoTitle>
+          <cost>$1,500</cost>
+          <order>2</order>
+          <children>
+            <page depth="2">
+              <name>Healthcare</name>
+              <slug>healthcare</slug>
+              <type>Static Page</type>
+              <complexity>Medium</complexity>
+              <serviceType>Design &amp; Dev</serviceType>
+              <description>HVAC for hospitals and clinics</description>
+              <seoTitle>Healthcare HVAC Solutions | CoolSys</seoTitle>
+              <cost>$2,000</cost>
+              <order>1</order>
+            </page>
+            <page depth="2">
+              <name>Retail</name>
+              <slug>retail</slug>
+              <type>Static Page</type>
+              <complexity>Medium</complexity>
+              <serviceType>Design &amp; Dev</serviceType>
+              <description>Climate control for retail spaces</description>
+              <seoTitle>Retail HVAC Solutions | CoolSys</seoTitle>
+              <cost>$1,800</cost>
+              <order>2</order>
+            </page>
+            <page depth="2">
+              <name>Industrial</name>
+              <slug>industrial</slug>
+              <type>Static Page</type>
+              <complexity>Medium</complexity>
+              <serviceType>Design &amp; Dev</serviceType>
+              <description>Heavy-duty industrial systems</description>
+              <seoTitle>Industrial HVAC | CoolSys</seoTitle>
+              <cost>$2,200</cost>
+              <order>3</order>
+            </page>
+          </children>
+        </page>
+        <page depth="1">
+          <name>Work With Us</name>
+          <slug>work-with-us</slug>
+          <type>Static Page</type>
+          <complexity>Low</complexity>
+          <serviceType>Design Only</serviceType>
+          <description>Career and partnership opportunities</description>
+          <seoTitle>Work With Us | CoolSys</seoTitle>
+          <cost>$800</cost>
+          <order>3</order>
+          <children>
+            <page depth="2">
+              <name>Careers</name>
+              <slug>careers</slug>
+              <type>Static Page</type>
+              <complexity>Medium</complexity>
+              <serviceType>Design &amp; Dev</serviceType>
+              <description>Join our team</description>
+              <seoTitle>Careers at CoolSys</seoTitle>
+              <cost>$1,500</cost>
+              <order>1</order>
+            </page>
+            <page depth="2">
+              <name>Partners</name>
+              <slug>partners</slug>
+              <type>Static Page</type>
+              <complexity>Low</complexity>
+              <serviceType>Design Only</serviceType>
+              <description>Partner with CoolSys</description>
+              <seoTitle>Partnership Opportunities | CoolSys</seoTitle>
+              <cost>$1,000</cost>
+              <order>2</order>
+            </page>
+          </children>
+        </page>
+        <page depth="1">
+          <name>About</name>
+          <slug>about</slug>
+          <type>Static Page</type>
+          <complexity>Low</complexity>
+          <serviceType>Design Only</serviceType>
+          <description>Learn about CoolSys</description>
+          <seoTitle>About CoolSys</seoTitle>
+          <cost>$600</cost>
+          <order>4</order>
+          <children>
+            <page depth="2">
+              <name>Our Story</name>
+              <slug>our-story</slug>
+              <type>Static Page</type>
+              <complexity>Low</complexity>
+              <serviceType>Design Only</serviceType>
+              <description>The CoolSys journey</description>
+              <seoTitle>Our Story | CoolSys</seoTitle>
+              <cost>$500</cost>
+              <order>1</order>
+            </page>
+            <page depth="2">
+              <name>Leadership</name>
+              <slug>leadership</slug>
+              <type>Static Page</type>
+              <complexity>Medium</complexity>
+              <serviceType>Design &amp; Dev</serviceType>
+              <description>Meet our leadership team</description>
+              <seoTitle>Leadership Team | CoolSys</seoTitle>
+              <cost>$1,200</cost>
+              <order>2</order>
+            </page>
+          </children>
+        </page>
+        <page depth="1">
+          <name>Contact</name>
+          <slug>contact</slug>
+          <type>Static Page</type>
+          <complexity>Low</complexity>
+          <serviceType>Design Only</serviceType>
+          <description>Get in touch with us</description>
+          <seoTitle>Contact Us | CoolSys</seoTitle>
+          <cost>$400</cost>
+          <order>5</order>
+        </page>
+      </children>
+    </page>
+  </pages>
+  <summary>
+    <totalPages>16</totalPages>
+    <totalCost>$26,000</totalCost>
+  </summary>
+</sitemap>

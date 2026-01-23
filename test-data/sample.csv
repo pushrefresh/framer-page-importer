@@ -1,0 +1,17 @@
+Name,Slug,Type,Complexity,Service Type,Parent Page,Depth,Cost
+Home,/,Static Page,Low,Design Only,,0,$500
+Solutions,solutions,Static Page,Medium,Design & Dev,Home,1,$2,000
+Commercial HVAC,commercial-hvac,Static Page,High,Full Build,Solutions,2,$4,000
+Professional Solutions,professional-solutions,Static Page,High,Full Build,Solutions,2,$3,500
+Residential Services,residential-services,Static Page,Medium,Design & Dev,Solutions,2,$2,500
+Markets,markets,Static Page,Medium,Design & Dev,Home,1,$1,500
+Healthcare,healthcare,Static Page,Medium,Design & Dev,Markets,2,$2,000
+Retail,retail,Static Page,Medium,Design & Dev,Markets,2,$1,800
+Industrial,industrial,Static Page,Medium,Design & Dev,Markets,2,$2,200
+Work With Us,work-with-us,Static Page,Low,Design Only,Home,1,$800
+Careers,careers,Static Page,Medium,Design & Dev,Work With Us,2,$1,500
+Partners,partners,Static Page,Low,Design Only,Work With Us,2,$1,000
+About,about,Static Page,Low,Design Only,Home,1,$600
+Our Story,our-story,Static Page,Low,Design Only,About,2,$500
+Leadership,leadership,Static Page,Medium,Design & Dev,About,2,$1,200
+Contact,contact,Static Page,Low,Design Only,Home,1,$400

@@ -1,0 +1,43 @@
+{
+  "name": "framer-page-importer",
+  "version": "1.0.0",
+  "description": "Framer Plugin to import page trees from CSV or XML files",
+  "type": "module",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "check": "tsc --noEmit",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "pack": "npm run build && framer-plugin pack"
+  },
+  "dependencies": {
+    "framer-plugin": "^3.10.2",
+    "papaparse": "^5.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "uuid": "^9.0.0",
+    "vite-plugin-framer": "^1.0.7",
+    "vite-plugin-mkcert": "^1.17.9"
+  },
+  "devDependencies": {
+    "@types/papaparse": "^5.3.14",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/uuid": "^9.0.8",
+    "@vitejs/plugin-react": "^4.2.1",
+    "jsdom": "^27.0.1",
+    "typescript": "^5.3.0",
+    "vite": "^7.3.1",
+    "vitest": "^3.2.4"
+  },
+  "framer": {
+    "id": "framer-page-importer",
+    "displayName": "Page Importer",
+    "modes": [
+      "default"
+    ]
+  }
+}
