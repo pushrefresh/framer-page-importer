@@ -102,13 +102,13 @@ export const FileUpload: React.FC<FileUploadProps> = ({
     <div>
       <div
         style={{
-          border: `1px dashed ${isDragging ? "rgba(255,255,255,0.3)" : "rgba(255,255,255,0.15)"}`,
+          border: `1px dashed ${isDragging ? colors.primary : colors.divider}`,
           borderRadius: 10,
           padding: "32px 20px",
           textAlign: "center",
           cursor: disabled ? "not-allowed" : "pointer",
           transition: "all 0.15s ease",
-          backgroundColor: isDragging ? "rgba(255,255,255,0.03)" : "transparent",
+          backgroundColor: isDragging ? colors.backgroundSecondary : "transparent",
           opacity: disabled ? 0.5 : 1,
         }}
         onDragOver={handleDragOver}
@@ -130,7 +130,7 @@ export const FileUpload: React.FC<FileUploadProps> = ({
             width: 40,
             height: 40,
             borderRadius: 8,
-            backgroundColor: "rgba(255,255,255,0.06)",
+            backgroundColor: colors.backgroundTertiary,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -188,7 +188,7 @@ export const FileUpload: React.FC<FileUploadProps> = ({
             marginTop: 10,
             padding: "10px 12px",
             borderRadius: 8,
-            backgroundColor: "rgba(255, 59, 48, 0.1)",
+            backgroundColor: "rgba(255, 59, 48, 0.12)",
             color: colors.error,
             fontSize: 12,
           }}

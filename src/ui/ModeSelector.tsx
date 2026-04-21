@@ -4,6 +4,7 @@
 
 import React from "react";
 import type { ImportMode } from "../types";
+import { colors } from "./styles";
 
 interface ModeSelectorProps {
   onSelectMode: (mode: ImportMode) => void;
@@ -31,13 +32,13 @@ const ModeCard: React.FC<{
         alignItems: "center",
         gap: 12,
         padding: "12px 14px",
-        backgroundColor: isHovered ? "rgba(255,255,255,0.06)" : "rgba(255,255,255,0.02)",
-        border: "none",
+        backgroundColor: isHovered ? colors.backgroundTertiary : colors.backgroundSecondary,
+        border: `1px solid ${colors.divider}`,
         borderRadius: 8,
         cursor: disabled ? "not-allowed" : "pointer",
         textAlign: "left",
         transition: "all 0.15s ease",
-        opacity: disabled ? 0.4 : 1,
+        opacity: disabled ? 0.5 : 1,
         width: "100%",
       }}
     >
@@ -46,12 +47,12 @@ const ModeCard: React.FC<{
           width: 32,
           height: 32,
           borderRadius: 6,
-          backgroundColor: "rgba(255,255,255,0.06)",
+          backgroundColor: colors.backgroundTertiary,
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
           flexShrink: 0,
-          color: "rgba(255,255,255,0.6)",
+          color: colors.textSecondary,
         }}
       >
         {icon}
@@ -61,7 +62,7 @@ const ModeCard: React.FC<{
           style={{
             fontSize: 13,
             fontWeight: 500,
-            color: "rgba(255,255,255,0.95)",
+            color: colors.text,
             marginBottom: 2,
           }}
         >
@@ -70,7 +71,7 @@ const ModeCard: React.FC<{
         <div
           style={{
             fontSize: 11,
-            color: "rgba(255,255,255,0.45)",
+            color: colors.textSecondary,
             lineHeight: 1.3,
           }}
         >
@@ -81,10 +82,10 @@ const ModeCard: React.FC<{
             style={{
               marginTop: 6,
               padding: "2px 6px",
-              backgroundColor: "rgba(255, 159, 10, 0.12)",
+              backgroundColor: "rgba(255, 159, 10, 0.15)",
               borderRadius: 3,
               fontSize: 10,
-              color: "#FF9F0A",
+              color: colors.warning,
               display: "inline-block",
             }}
           >
@@ -98,7 +99,7 @@ const ModeCard: React.FC<{
           height="14"
           viewBox="0 0 24 24"
           fill="none"
-          stroke="rgba(255,255,255,0.3)"
+          stroke={colors.textTertiary}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"

@@ -59,7 +59,7 @@ export const styles: Record<string, React.CSSProperties> = {
   // Header
   header: {
     padding: "14px 16px",
-    borderBottom: "1px solid rgba(255,255,255,0.08)",
+    borderBottom: `1px solid ${colors.divider}`,
   },
 
   title: {
@@ -74,7 +74,7 @@ export const styles: Record<string, React.CSSProperties> = {
     margin: 0,
     marginTop: 2,
     fontSize: 12,
-    color: "rgba(255,255,255,0.5)",
+    color: colors.textSecondary,
   },
 
   // Content area
@@ -87,7 +87,7 @@ export const styles: Record<string, React.CSSProperties> = {
   // Footer
   footer: {
     padding: "10px 16px",
-    borderTop: "1px solid rgba(255,255,255,0.08)",
+    borderTop: `1px solid ${colors.divider}`,
     display: "flex",
     gap: 8,
     justifyContent: "flex-end",
@@ -101,7 +101,7 @@ export const styles: Record<string, React.CSSProperties> = {
   sectionTitle: {
     fontSize: 11,
     fontWeight: 600,
-    color: "rgba(255,255,255,0.4)",
+    color: colors.textTertiary,
     textTransform: "uppercase" as const,
     letterSpacing: "0.05em",
     marginBottom: 10,
@@ -123,13 +123,13 @@ export const styles: Record<string, React.CSSProperties> = {
   },
 
   buttonPrimary: {
-    backgroundColor: "#0099FF",
-    color: "#fff",
+    backgroundColor: colors.primary,
+    color: colors.textReversed,
   },
 
   buttonSecondary: {
-    backgroundColor: "rgba(255,255,255,0.08)",
-    color: "rgba(255,255,255,0.8)",
+    backgroundColor: colors.backgroundTertiary,
+    color: colors.text,
   },
 
   buttonDisabled: {
@@ -147,8 +147,8 @@ export const styles: Record<string, React.CSSProperties> = {
     width: "100%",
     padding: "6px 10px",
     borderRadius: 6,
-    border: "1px solid rgba(255,255,255,0.1)",
-    backgroundColor: "rgba(255,255,255,0.05)",
+    border: `1px solid ${colors.divider}`,
+    backgroundColor: colors.backgroundTertiary,
     color: colors.text,
     fontSize: 12,
     outline: "none",
@@ -157,15 +157,15 @@ export const styles: Record<string, React.CSSProperties> = {
   },
 
   inputFocus: {
-    borderColor: "#0099FF",
+    borderColor: colors.primary,
   },
 
   select: {
     width: "100%",
     padding: "6px 10px",
     borderRadius: 6,
-    border: "1px solid rgba(255,255,255,0.1)",
-    backgroundColor: "rgba(255,255,255,0.05)",
+    border: `1px solid ${colors.divider}`,
+    backgroundColor: colors.backgroundTertiary,
     color: colors.text,
     fontSize: 12,
     outline: "none",
@@ -186,17 +186,17 @@ export const styles: Record<string, React.CSSProperties> = {
     width: 14,
     height: 14,
     cursor: "pointer",
-    accentColor: "#0099FF",
+    accentColor: colors.primary,
     margin: 0,
   },
 
   // Tree view
   treeContainer: {
     borderRadius: 8,
-    backgroundColor: "rgba(255,255,255,0.02)",
+    backgroundColor: colors.backgroundSecondary,
     maxHeight: 300,
     overflow: "auto",
-    border: "1px solid rgba(255,255,255,0.08)",
+    border: `1px solid ${colors.divider}`,
   },
 
   treeNode: {
@@ -204,17 +204,17 @@ export const styles: Record<string, React.CSSProperties> = {
     display: "flex",
     alignItems: "center",
     gap: 8,
-    borderBottom: "1px solid rgba(255,255,255,0.05)",
+    borderBottom: `1px solid ${colors.divider}`,
     cursor: "default",
     transition: "background 0.1s ease",
   },
 
   treeNodeHover: {
-    backgroundColor: "rgba(255,255,255,0.03)",
+    backgroundColor: colors.backgroundTertiary,
   },
 
   treeNodeSelected: {
-    backgroundColor: "rgba(0, 153, 255, 0.1)",
+    backgroundColor: colors.primaryDimmed,
   },
 
   treeNodeName: {
@@ -228,7 +228,7 @@ export const styles: Record<string, React.CSSProperties> = {
 
   treeNodePath: {
     fontSize: 11,
-    color: "rgba(255,255,255,0.35)",
+    color: colors.textTertiary,
     overflow: "hidden",
     textOverflow: "ellipsis",
     whiteSpace: "nowrap" as const,
@@ -239,7 +239,7 @@ export const styles: Record<string, React.CSSProperties> = {
   validationPanel: {
     borderRadius: 8,
     overflow: "hidden",
-    border: "1px solid rgba(255,255,255,0.08)",
+    border: `1px solid ${colors.divider}`,
   },
 
   validationHeader: {
@@ -258,7 +258,7 @@ export const styles: Record<string, React.CSSProperties> = {
 
   validationItem: {
     padding: "8px 10px",
-    borderTop: "1px solid rgba(255,255,255,0.05)",
+    borderTop: `1px solid ${colors.divider}`,
     fontSize: 12,
     display: "flex",
     alignItems: "flex-start",
@@ -266,11 +266,11 @@ export const styles: Record<string, React.CSSProperties> = {
   },
 
   errorItem: {
-    backgroundColor: "rgba(255, 59, 48, 0.05)",
+    backgroundColor: "rgba(255, 59, 48, 0.08)",
   },
 
   warningItem: {
-    backgroundColor: "rgba(255, 159, 10, 0.05)",
+    backgroundColor: "rgba(255, 159, 10, 0.08)",
   },
 
   // Progress
@@ -280,14 +280,14 @@ export const styles: Record<string, React.CSSProperties> = {
 
   progressBar: {
     height: 3,
-    backgroundColor: "rgba(255,255,255,0.1)",
+    backgroundColor: colors.backgroundTertiary,
     borderRadius: 2,
     overflow: "hidden",
   },
 
   progressFill: {
     height: "100%",
-    backgroundColor: "#0099FF",
+    backgroundColor: colors.primary,
     transition: "width 0.3s ease",
     borderRadius: 2,
   },
@@ -295,7 +295,7 @@ export const styles: Record<string, React.CSSProperties> = {
   progressText: {
     marginTop: 8,
     fontSize: 12,
-    color: "rgba(255,255,255,0.5)",
+    color: colors.textSecondary,
     textAlign: "center" as const,
   },
 
@@ -310,9 +310,9 @@ export const styles: Record<string, React.CSSProperties> = {
   resultCard: {
     padding: 14,
     borderRadius: 8,
-    backgroundColor: "rgba(255,255,255,0.03)",
+    backgroundColor: colors.backgroundSecondary,
     textAlign: "center" as const,
-    border: "1px solid rgba(255,255,255,0.08)",
+    border: `1px solid ${colors.divider}`,
   },
 
   resultNumber: {
@@ -324,7 +324,7 @@ export const styles: Record<string, React.CSSProperties> = {
 
   resultLabel: {
     fontSize: 10,
-    color: "rgba(255,255,255,0.5)",
+    color: colors.textSecondary,
     textTransform: "uppercase" as const,
     letterSpacing: "0.03em",
   },
@@ -332,23 +332,23 @@ export const styles: Record<string, React.CSSProperties> = {
   // Logs
   logContainer: {
     borderRadius: 8,
-    backgroundColor: "rgba(255,255,255,0.02)",
+    backgroundColor: colors.backgroundSecondary,
     maxHeight: 160,
     overflow: "auto",
     fontFamily: "var(--framer-font-mono, monospace)",
     fontSize: 11,
-    border: "1px solid rgba(255,255,255,0.08)",
+    border: `1px solid ${colors.divider}`,
   },
 
   logEntry: {
     padding: "4px 10px",
-    borderBottom: "1px solid rgba(255,255,255,0.05)",
+    borderBottom: `1px solid ${colors.divider}`,
     display: "flex",
     gap: 8,
   },
 
   logTime: {
-    color: "rgba(255,255,255,0.3)",
+    color: colors.textTertiary,
     flexShrink: 0,
   },
 
@@ -381,8 +381,8 @@ export const styles: Record<string, React.CSSProperties> = {
   },
 
   badgeInfo: {
-    backgroundColor: "rgba(0, 153, 255, 0.15)",
-    color: "#0099FF",
+    backgroundColor: colors.primaryDimmed,
+    color: colors.primary,
   },
 
   // Form groups
@@ -395,7 +395,7 @@ export const styles: Record<string, React.CSSProperties> = {
     marginBottom: 4,
     fontSize: 11,
     fontWeight: 500,
-    color: "rgba(255,255,255,0.5)",
+    color: colors.textSecondary,
   },
 
   // Flex helpers
@@ -414,7 +414,7 @@ export const styles: Record<string, React.CSSProperties> = {
   // Info/hint text
   hint: {
     fontSize: 11,
-    color: "rgba(255,255,255,0.4)",
+    color: colors.textTertiary,
     marginTop: 4,
     lineHeight: 1.4,
   },
@@ -423,7 +423,7 @@ export const styles: Record<string, React.CSSProperties> = {
   emptyState: {
     textAlign: "center" as const,
     padding: 24,
-    color: "rgba(255,255,255,0.5)",
+    color: colors.textSecondary,
     fontSize: 12,
   },
 
@@ -431,15 +431,15 @@ export const styles: Record<string, React.CSSProperties> = {
   card: {
     padding: 14,
     borderRadius: 8,
-    backgroundColor: "rgba(255,255,255,0.03)",
-    border: "1px solid rgba(255,255,255,0.08)",
+    backgroundColor: colors.backgroundSecondary,
+    border: `1px solid ${colors.divider}`,
   },
 
   // Info box
   infoBox: {
     padding: 10,
     borderRadius: 6,
-    backgroundColor: "rgba(0, 153, 255, 0.1)",
+    backgroundColor: colors.primaryDimmed,
     fontSize: 12,
     color: colors.text,
     lineHeight: 1.4,
@@ -449,7 +449,7 @@ export const styles: Record<string, React.CSSProperties> = {
   warningBox: {
     padding: 10,
     borderRadius: 6,
-    backgroundColor: "rgba(255, 159, 10, 0.1)",
+    backgroundColor: "rgba(255, 159, 10, 0.12)",
     fontSize: 12,
     color: colors.text,
     lineHeight: 1.4,

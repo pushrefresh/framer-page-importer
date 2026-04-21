@@ -4,6 +4,7 @@
 
 import React, { useState, useCallback } from "react";
 import type { PageNode } from "../types";
+import { colors } from "./styles";
 
 interface TreeViewProps {
   nodes: PageNode[];
@@ -67,12 +68,12 @@ const TreeNodeComponent: React.FC<TreeNodeProps> = ({
           gap: 6,
           padding: "5px 8px",
           paddingLeft: 8 + depth * 16,
-          borderBottom: "1px solid rgba(255,255,255,0.04)",
+          borderBottom: `1px solid ${colors.divider}`,
           transition: "background 0.1s ease",
           backgroundColor: isSelected
-            ? "rgba(0, 153, 255, 0.08)"
+            ? colors.primaryDimmed
             : isHovered
-              ? "rgba(255,255,255,0.02)"
+              ? colors.backgroundTertiary
               : "transparent",
         }}
         onMouseEnter={() => setIsHovered(true)}
@@ -87,7 +88,7 @@ const TreeNodeComponent: React.FC<TreeNodeProps> = ({
             alignItems: "center",
             justifyContent: "center",
             cursor: hasChildren ? "pointer" : "default",
-            color: "rgba(255,255,255,0.3)",
+            color: colors.textTertiary,
             flexShrink: 0,
           }}
           onClick={() => hasChildren && onToggleExpand(node.id)}
@@ -120,8 +121,8 @@ const TreeNodeComponent: React.FC<TreeNodeProps> = ({
               width: 14,
               height: 14,
               borderRadius: 3,
-              border: isSelected ? "none" : "1px solid rgba(255,255,255,0.3)",
-              backgroundColor: isSelected ? "#fff" : "transparent",
+              border: isSelected ? "none" : `1px solid ${colors.textTertiary}`,
+              backgroundColor: isSelected ? colors.primary : "transparent",
               cursor: "pointer",
               display: "flex",
               alignItems: "center",
@@ -136,7 +137,7 @@ const TreeNodeComponent: React.FC<TreeNodeProps> = ({
                 height="10"
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="#000"
+                stroke={colors.textReversed}
                 strokeWidth="3"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -153,7 +154,7 @@ const TreeNodeComponent: React.FC<TreeNodeProps> = ({
           height="12"
           viewBox="0 0 24 24"
           fill="none"
-          stroke="rgba(255,255,255,0.4)"
+          stroke={colors.textSecondary}
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -172,7 +173,7 @@ const TreeNodeComponent: React.FC<TreeNodeProps> = ({
             whiteSpace: "nowrap",
             fontWeight: 500,
             fontSize: 12,
-            color: "rgba(255,255,255,0.85)",
+            color: colors.text,
           }}
         >
           {node.name}
@@ -192,9 +193,9 @@ const TreeNodeComponent: React.FC<TreeNodeProps> = ({
               padding: "1px 5px",
               fontSize: 10,
               borderRadius: 3,
-              border: "1px solid #0099FF",
-              backgroundColor: "rgba(0,0,0,0.4)",
-              color: "rgba(255,255,255,0.9)",
+              border: `1px solid ${colors.primary}`,
+              backgroundColor: colors.backgroundTertiary,
+              color: colors.text,
               outline: "none",
             }}
           />
@@ -202,7 +203,7 @@ const TreeNodeComponent: React.FC<TreeNodeProps> = ({
           <span
             style={{
               fontSize: 10,
-              color: "rgba(255,255,255,0.3)",
+              color: colors.textTertiary,
               overflow: "hidden",
               textOverflow: "ellipsis",
               whiteSpace: "nowrap",
@@ -224,8 +225,8 @@ const TreeNodeComponent: React.FC<TreeNodeProps> = ({
               borderRadius: 3,
               fontSize: 9,
               fontWeight: 600,
-              backgroundColor: "rgba(0, 153, 255, 0.12)",
-              color: "#0099FF",
+              backgroundColor: colors.primaryDimmed,
+              color: colors.primary,
             }}
           >
             {node.children.length}
@@ -322,11 +323,11 @@ export const TreeView: React.FC<TreeViewProps> = ({
       style={{
         cursor: "pointer",
         fontSize: 11,
-        color: "rgba(255,255,255,0.5)",
+        color: colors.textSecondary,
         transition: "color 0.1s",
       }}
-      onMouseEnter={(e) => (e.currentTarget.style.color = "rgba(255,255,255,0.8)")}
-      onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255,255,255,0.5)")}
+      onMouseEnter={(e) => (e.currentTarget.style.color = colors.text)}
+      onMouseLeave={(e) => (e.currentTarget.style.color = colors.textSecondary)}
     >
       {children}
     </span>
@@ -351,7 +352,7 @@ export const TreeView: React.FC<TreeViewProps> = ({
 
         {showCheckboxes && (
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <span style={{ color: "rgba(255,255,255,0.35)", fontSize: 11 }}>
+            <span style={{ color: colors.textTertiary, fontSize: 11 }}>
               {selectedCount}/{totalCount}
             </span>
             <TextButton onClick={onSelectAll}>All</TextButton>
@@ -364,14 +365,14 @@ export const TreeView: React.FC<TreeViewProps> = ({
       <div
         style={{
           borderRadius: 6,
-          backgroundColor: "rgba(255,255,255,0.02)",
+          backgroundColor: colors.backgroundSecondary,
           maxHeight: 280,
           overflow: "auto",
-          border: "1px solid rgba(255,255,255,0.06)",
+          border: `1px solid ${colors.divider}`,
         }}
       >
         {nodes.length === 0 ? (
-          <div style={{ textAlign: "center", padding: 20, color: "rgba(255,255,255,0.4)", fontSize: 12 }}>
+          <div style={{ textAlign: "center", padding: 20, color: colors.textTertiary, fontSize: 12 }}>
             No pages to display
           </div>
         ) : (

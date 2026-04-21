@@ -20,12 +20,12 @@ const ValidationItem: React.FC<{
     <div
       style={{
         padding: "8px 10px",
-        borderTop: "1px solid rgba(255,255,255,0.05)",
+        borderTop: `1px solid ${colors.divider}`,
         fontSize: 12,
         display: "flex",
         alignItems: "flex-start",
         gap: 8,
-        backgroundColor: isError ? "rgba(255, 59, 48, 0.05)" : "rgba(255, 159, 10, 0.05)",
+        backgroundColor: isError ? "rgba(255, 59, 48, 0.08)" : "rgba(255, 159, 10, 0.08)",
       }}
     >
       <svg
@@ -44,12 +44,12 @@ const ValidationItem: React.FC<{
         <line x1="12" y1="16" x2="12.01" y2="16" />
       </svg>
       <div style={{ flex: 1 }}>
-        <div style={{ color: "rgba(255,255,255,0.9)", marginBottom: 2 }}>{item.message}</div>
+        <div style={{ color: colors.text, marginBottom: 2 }}>{item.message}</div>
         {item.nodePath && (
           <div
             style={{
               fontSize: 11,
-              color: "rgba(255,255,255,0.4)",
+              color: colors.textTertiary,
               display: "flex",
               alignItems: "center",
               gap: 6,
@@ -61,7 +61,7 @@ const ValidationItem: React.FC<{
                 style={{
                   background: "none",
                   border: "none",
-                  color: "#0099FF",
+                  color: colors.primary,
                   cursor: "pointer",
                   padding: 0,
                   fontSize: 11,
@@ -92,13 +92,13 @@ export const ValidationPanel: React.FC<ValidationPanelProps> = ({ validation, on
         style={{
           borderRadius: 8,
           overflow: "hidden",
-          border: "1px solid rgba(255,255,255,0.08)",
+          border: `1px solid ${colors.divider}`,
         }}
       >
         <div
           style={{
             padding: "8px 10px",
-            backgroundColor: "rgba(52, 199, 89, 0.1)",
+            backgroundColor: "rgba(52, 199, 89, 0.12)",
             display: "flex",
             alignItems: "center",
             gap: 8,
@@ -128,7 +128,7 @@ export const ValidationPanel: React.FC<ValidationPanelProps> = ({ validation, on
       style={{
         borderRadius: 8,
         overflow: "hidden",
-        border: "1px solid rgba(255,255,255,0.08)",
+        border: `1px solid ${colors.divider}`,
       }}
     >
       {/* Errors section */}
@@ -137,7 +137,7 @@ export const ValidationPanel: React.FC<ValidationPanelProps> = ({ validation, on
           <div
             style={{
               padding: "8px 10px",
-              backgroundColor: "rgba(255, 59, 48, 0.1)",
+              backgroundColor: "rgba(255, 59, 48, 0.12)",
               display: "flex",
               alignItems: "center",
               gap: 8,
@@ -181,7 +181,7 @@ export const ValidationPanel: React.FC<ValidationPanelProps> = ({ validation, on
           <div
             style={{
               padding: "8px 10px",
-              backgroundColor: "rgba(255, 159, 10, 0.1)",
+              backgroundColor: "rgba(255, 159, 10, 0.15)",
               display: "flex",
               alignItems: "center",
               gap: 8,
